@@ -4,11 +4,7 @@ package Calculator.SimpleCalculator;
  * Hello world!
  *
  */
-class ZeroDivisionException extends Exception{
-	public ZeroDivisionException(){
-		super();
-	}
-}
+
 public class Calculator 
 {
     public double doAdd(double a, double b)
@@ -23,10 +19,10 @@ public class Calculator
     {
         return num1 * num2;
     }
-    public double doDiv(double num1, double num2) throws ZeroDivisionException
+    public double doDiv(double num1, double num2) throws Exception
     {
         if(num2 == 0){
-        	throw new ZeroDivisionException();
+        	throw new Exception();
         }
     	return num1 / num2;
     }
