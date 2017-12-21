@@ -11,9 +11,9 @@ class ZeroDivisionException extends Exception{
 }
 public class Calculator 
 {
-    public double doAdd(double num1, double num2)
+    public double doAdd(double a, double b)
     {
-        return num1 + num2;
+        return a + b;
     }
     public double doSub(double num1, double num2)
     {
