@@ -2,5 +2,5 @@ projectKey=Calculator:SimpleCalculator
 serverUrl=http://localhost:9000
 serverVersion=6.5.0.27846
 dashboardUrl=http://localhost:9000/dashboard/index/Calculator:SimpleCalculator
-ceTaskId=AWB3lnT5-vYcoCCyLtK-
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AWB3lnT5-vYcoCCyLtK-
+ceTaskId=AWB4g-Wxf-FY-DOoje0W
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWB4g-Wxf-FY-DOoje0W

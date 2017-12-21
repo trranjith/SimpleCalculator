@@ -7,7 +7,8 @@ package Calculator.SimpleCalculator;
 
 public class Calculator {
     public double doAdd(double a, double b){
-        return a + b;
+    	double sum = a + b;
+        return sum;
     }
     public double doSub(double num1, double num2){
         double SUB = 0;
@@ -23,5 +24,4 @@ public class Calculator {
         }
     	return num1 / num2;
     }
-    
 }
