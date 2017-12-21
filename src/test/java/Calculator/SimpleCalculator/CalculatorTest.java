@@ -1,8 +1,7 @@
 package Calculator.SimpleCalculator;
 
 import static org.junit.Assert.assertTrue;
-
-//import org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 import org.junit.Test;
 
 public class CalculatorTest 
@@ -11,8 +10,13 @@ public class CalculatorTest
    
    
    @Test
-   public void testDoAdd(){
+   public void testDoAdd1(){
 	   assertTrue((calcObj.doAdd(10, 20)) == 30.0);
+   }
+   
+   @Test
+   public void testDoAdd2(){
+	   assertFalse((calcObj.doAdd(10, 20)) == -30.0);
    }
    
    @Test
@@ -31,16 +35,12 @@ public class CalculatorTest
    }
    
    @Test
-   public void testDoDiv2() throws ZeroDivisionException{
+   public void testDoDiv2() throws Exception{
 	   assertTrue((calcObj.doDiv(10, 2)) == 5.0);
    }
    
-   @Test(expected = ZeroDivisionException.class)
-   public void testDoDiv1() throws ZeroDivisionException{
+   @Test(expected = Exception.class)
+   public void testDoDiv1() throws Exception{
 	   calcObj.doDiv(10, 0);
-   }
-   
-   
-   
-   
+   }   
 }

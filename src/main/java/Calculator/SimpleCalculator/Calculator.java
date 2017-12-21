@@ -5,22 +5,19 @@ package Calculator.SimpleCalculator;
  *
  */
 
-public class Calculator 
-{
-    public double doAdd(double a, double b)
-    {
+public class Calculator {
+    public double doAdd(double a, double b){
         return a + b;
     }
-    public double doSub(double num1, double num2)
-    {
-        return num1 - num2;
+    public double doSub(double num1, double num2){
+        double SUB = 0;
+        SUB = num1 - num2;
+    	return SUB;
     }
-    public double doMul(double num1, double num2)
-    {
+    public double doMul(double num1, double num2){
         return num1 * num2;
     }
-    public double doDiv(double num1, double num2) throws Exception
-    {
+    public double doDiv(double num1, double num2) throws Exception{
         if(num2 == 0){
         	throw new Exception();
         }
